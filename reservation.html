@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+     <script defer src="./app.js"></script>
+    <style>
+        /* change background color smoothly */
+        body{
+            background-color: rgb(127, 146, 255);
+    height: 100%;
+    width: 100%;
+    animation: myanimation 10s infinite;
+}
+
+    @keyframes myanimation {
+        0%{background-color: rgb(241, 15, 121)}
+        25%{background-color: rgb(207, 211, 7)}
+        50%{background-color: rgb(6, 236, 137)}
+        75%{background-color: rgb(138, 26, 230)}
+        100%{background-color: rgb(233, 126, 25)}
+        }
+        
+            
+    section{
+        text-align: center;
+        padding-top: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    input{
+        font-size: 30px;
+    }
+    label{
+        font-size: 30px;
+    
+
+    }
+    .email{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+    button{
+        font-size: 30px;
+    }
+    button:hover{
+        background-color: green;
+    }
+        
+    </style>
+    <script></script>
+    
+    
+
+</head>
+<div class="book">
+    
+</div>
+
+<body>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+    <!-- form for booking appoinment labels and inputs if the user miss any information page will inform user -->
+    <section>
+        <div id="error"></div>
+        
+        <div class="fname">
+            <label for="fname">First Name</label>
+        </div>
+        <div class="fname_input">
+            <input name="fname" type="text" required>
+            
+        </div>
+        <div class="lname">
+            <label for="lname">Last Name</label>
+        </div>
+        <div class="lname_input">
+            <input name="lname" type="text" required>
+        </div>
+        
+        <div class="phone">
+            <label for="phone_number">Phone Number</label>
+        </div>
+        <div class="phone_input">
+            <input name="phone" type="tel" required>
+        </div>
+        <div class="date">
+            <label for="choose_date">Choose Date</label>
+        </div>
+        <div class="date_input">
+            <input name="date" type="date" required>
+        </div>
+        <div class="doc">
+            <label for="choose_doctor">Choose Doctor</label>
+        </div>
+        <div class="doc_input">
+            <input name="doc" type="text" required>
+        </div>
+        
+        <div class="btn_book">
+            <!-- show that appoinment booked -->
+            <button onclick="btn()" name="submit" type="submit">Book Appoinment</button>
+            <script>
+                function btn() {
+                    alert("Booked")
+                }
+            </script>
+
+        </div>
+    
+    
+    
+    </section>
+    </form>
+</body>
+</html>

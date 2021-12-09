@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions and Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 0;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        section{
+            text-align: center;
+            margin: 50px;
+
+        }
+        input{
+            font-size: 50px;
+        }
+        .text_input{
+            text-align: center;
+        }
+        .submit_container{
+            align-items: center;
+            
+            
+           
+            
+        }
+        .submit:hover{
+            background-color: turquoise;
+        }
+        /* change background color smoothly  */
+        body{
+            background-image: url("back_1.jpg");
+
+            height: 100%;
+            width: 100%;
+            animation: myanimation 10s infinite;
+}
+        @keyframes myanimation {
+        0%{background-image: url("back_2.jpg");}
+        25%{background-image: url("back_3.jpg");}
+        50%{background-image: url("back_4.webp");}
+        75%{background-image: url("back_5.jpg");}
+        100%{background-image: url("back_1.jpg");}
+        }
+        header{
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>Leave your questions and recommendations here</header>
+    <section>
+        <div class="questions">
+        
+    </div>
+    <!-- if user miss some information form will not be submitted -->
+        <form name="recform" action="index.html" 
+        onsubmit="Submitted()" method="post">
+        <!-- after submitting form user will come back to home page -->
+            <div class="name">
+                <label for="name">Enter Your Name</label></div>
+                <div class="name_input">
+                <input name="name" type="text" required>
+            </div>
+            <div class="text">
+                <label for="text">Your Questions and Recommendations</label>
+            </div>
+            <div class="text_input">
+                <input name="text" type="text" required>
+            </div>
+            <div class="submit_container">
+                <button onclick="submit() " name="submit" value="send" class="submit">Submit</button>
+               
+        </form>
+        <script>
+            // get input by name and check is it completed 
+            function submit() {
+                var name = document.forms[recForm][name];
+                var text = document.forms[recForm][text];
+                if (name.value == "") {
+                    window.alert("Please enter your name.");
+                    name.focus();
+                    return false;
+                    
+                }
+                // if information is missing user will get message "Please enter your text "
+
+                if (text == null || text == "") {
+                    alert("Please enter your text");
+                   
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+            
+        </div>
+        
+    </section>
+    
+</body>
+</html>

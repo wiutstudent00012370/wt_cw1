@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    h3{
+        text-align: center;
+    }
+    .servive_h3 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .sevice_img {
+        align-items: center;
+        
+    }
+    *{
+        text-align: center;
+        align-items: center;
+    }
+    button{
+        font-size: 30px;
+    }
+    .our_services{
+        font-size: 100px;
+    }
+    button:hover{
+        background-color: slateblue;
+    }
+    body
+            {
+    background-color: rgb(127, 146, 255);
+    height: 100%;
+    width: 100%;
+    animation: myanimation 10s infinite;
+}
+
+    @keyframes myanimation {
+        0%{background-color: rgb(87, 197, 240)}
+        25%{background-color: rgba(205, 106, 245, 0.658)}
+        50%{background-color: rgb(95, 233, 173)}
+        75%{background-color: rgb(224, 143, 240)}
+        100%{background-color: rgb(47, 228, 158)}
+       
+        
+    }
+</style>
+
+<body>
+    <p id="time"></p>
+    <div class="body">
+    <h3 class="our_services">Our Services</h3>
+
+
+    
+    
+    
+     
+     <section>
+        
+         <h3 class="servive_h3">X ray radiology services</h3><br>
+         <img class="sevice_img" src="./x_ray.jfif">
+         
+         
+        <button onclick="x_ray()" class="service_buttoon">Read</button>
+        <script>
+            function x_ray() {
+                alert("X-ray or radiography uses a very small dose of ionizing radiation to produce pictures of the body's internal structures. X-rays are the oldest and most frequently used form of medical imaging. They are often used to help diagnosed fractured bones, look for injury or infection and to locate foreign objects in soft tissue.")
+            }
+        </script>
+     </section>
+     <section>
+         <h3 class="servive_h3">Laboratory Services</h3>
+         <img class="sevice_img" src="./lab service.jpg" width="300px" height="300px"><br>
+         
+         <button onclick="lab()" class="service_buttoon">Read</button>
+         <script>
+             function lab () {
+                 alert("Clinical laboratory services means the biological, microbiological, serological, chemical, immunohematological, hematological, biophysical, cytological, pathological, or other examination of materials derived from the human body for the purpose of providing information for the diagnosis, prevention, or treatment of a disease or impairment of a human being, or for the assessment of the health of a human being, including procedures to determine, measure, or otherwise describe the presence or absence of various substances or organisms in the body.")
+             }
+         </script>
+     </section>
+     
+     <section>
+         <h3 class="servive_h3">Heart Care Services</h3>
+         <img class="sevice_img" src="./heart.jpg" width="300" height="300"><br>
+         <!-- onclick button user will get information about the services -->
+         <button onclick="heart()" class="service_buttoon">Read</button>
+         <script>
+             function heart () {
+                 alert("Cardiology focuses on the diagnosis and treatment of the cardiovascular system - heart, arteries, and veins. Your Cardiologist may order specialized testing to determine which treatment options are best for you.")
+             }
+         </script>
+        
+     </section>
+     <section>
+         <h3 class="servive_h3">Orthopedics</h3>
+         <img class="sevice_img" src="./ortho.jpg" width="300" height="300"><br>
+         
+         <button onclick="ortho()" class="service_buttoon">Read</button>
+         <script>
+            //  onclick show the information about orthopedics
+             function ortho () {
+                 alert("Orthopedics, or orthopedic services, aim at the treatment of the musculoskeletal system. This includes your bones, joints, ligaments, tendons, and muscles.")
+             }
+         </script>
+     </section>
+     <section>
+         <h3 class="servive_h3">Cancer Care</h3>
+         <img class="sevice_img" src="./cancer.jpg" width="300" height="300"><br>
+         
+         <button onclick="cancer()" class="service_buttoon">Read</button>
+         <script>
+            //  onclick show the information about cancer
+             function cancer () {
+                 alert ("CNSs treat and manage the health concerns of patients and work to promote health and wellbeing in the patients they care for. CNSs in cancer care practice autonomously and integrate knowledge of cancer and medical treatments into assessment, diagnosis, and treatment of patients' problems and concerns.")
+             }
+         </script>
+     </section>
+     <section>
+         <h3 class="servive_h3">Emergency</h3>
+         <img class="sevice_img" src="./emergency.webp" width="300" height="300"><br>
+         
+         <button onclick="emergency()" class="service_buttoon">Read</button>
+         <script>
+             function emergency () {
+                 alert("The saving of life and rescue of people. protection of properties and prevention of escalation. the carrying out of other specialist services, including flood/water rescue services. to assist people where the use of fire service personnel and equipment is relevant.")
+             }
+         </script>
+     </section>
+     <section>
+         <h3 class="servive_h3">Family medicine</h3>
+         <img class="sevice_img" src="./family-medicine.jpeg" width="300" height="300"><br>
+         
+         <button onclick="family()" class="service_buttoon">Read</button>
+         <script>
+             function family () {
+                 alert("Family medicine is a medical specialty within primary care that provides continuing and comprehensive health care for the individual and family across all ages, genders, diseases, and parts of the body. The specialist, who is usually a primary care physician, is named a family physician.")
+             }
+         </script>
+    </section>
+</div>
+     
+
+
+    
+</body>
+</html>

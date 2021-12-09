@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        header{
+            text-align: center;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+           
+            text-align: center;
+            
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        section{
+            margin-top: 100px;
+            display: block;
+            text-align: center;
+            
+
+        }
+        button{
+            font-size: 30px;
+            margin: 50px;
+            padding: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        button:hover{
+            background-color: lightseagreen;
+        }
+        body
+            {
+    background-color: rgb(127, 146, 255);
+    height: 100%;
+    width: 100%;
+    animation: myanimation 10s infinite;
+}
+
+    @keyframes myanimation {
+        0%{background-color: rgb(241, 15, 121)}
+        25%{background-color: rgb(207, 211, 7)}
+        50%{background-color: rgb(6, 236, 137)}
+        75%{background-color: rgb(138, 26, 230)}
+        100%{background-color: rgb(233, 126, 25)}
+       
+        
+    }
+    </style>
+</head>
+<body>
+    <header>Pricing</header>
+    <p>Click on buttons to see the price</p>
+    <!-- after button click user can get information about price -->
+    <section>
+        <div>
+        </div>
+        <div class="family">
+            <button onclick="myFunction()">Family medicine</button>
+            <script>
+                // when button clicked information will be displayed
+                function myFunction() {
+                    alert("Beetween $100 and $1000")
+                }
+            </script>
+        </div>
+        <div class="ray">
+            <button onclick="show()">X ray radiology services</button>
+            <script>
+                // onclick display answer
+                function show() {
+                    alert("$1000")
+                }
+            </script>
+        </div>
+        <div class="lab">
+            <button onclick="lab()">Laboratory Services</button>
+            <script>
+                function lab() {
+                    alert("Between$500-$1000")
+                }
+            </script>
+        </div>
+        <div class="blood">
+            <button onclick="blood()">Blood Services</button>
+            <script>
+                // onclick display price
+                function blood() {
+                    alert("Between $500-$700")
+                }
+            </script>
+        </div>
+        <div class="heart">
+            <button onclick="heart()">Heart Care Services</button>
+            <script>
+                // onclick display price
+                function heart() {
+                    alert("Between $500-$700")
+                }
+            </script>
+        </div>
+        <div class="Orthopedics">
+            <button onclick="myfunction()">Orthopedics</button>
+            <script>
+                // onclick display price
+                function myfunction() {
+                    alert("Between $1000-$1500")
+                }
+            </script>
+        </div>
+        <div class="cancer">
+            <button onclick="cancer()">Cancer Care</button>
+            <script>
+                // onclick display price
+                function cancer() {
+                    alert("Between $1500 and $2000")
+                }
+            </script>
+        </div>
+        <div class="emergency">
+            <button onclick="emergancy()">Emergency</button>
+            <script>
+                // onclick displayn price
+                function emergancy() {
+                    alert("From $100")
+                }
+            </script>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

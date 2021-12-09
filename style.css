@@ -1,0 +1,207 @@
+.doctors {
+    width: 100%;
+    height: 300px;
+}
+/* change the color of the section */
+section{
+    color: black;
+}
+a:link {
+    text-decoration: none!important;
+    color: rgb(12, 11, 11) !important;
+
+}
+/* make the picture full screen */
+.virus {
+    width: 100%;
+}
+/* give style to navigation elements */
+.nav {
+    
+    margin: 8px;
+    padding: 2px;
+    display: inline;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    color: white;
+}
+/* change background of the button on hover */
+a:hover {
+    background-color: white;
+}
+.links {
+    background-color: rgb(100, 195, 250);
+}
+
+.doctors2 {
+    width: 100%;
+
+}
+h1 {
+    position: absolute;
+    top: 350px;
+    left: 16px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.covid {
+    top: 500px;
+}
+
+.covid-19 {
+    width: 100%;
+    font-size: 50px;
+    background-color: turquoise;
+
+}
+#time{
+    font-size: 30px;
+    
+}
+
+.time_map{
+    display: inline;
+}
+.response {
+    position: absolute;
+    top: 1500px;
+    font-size: 30px;
+    background-color: rgb(154, 205, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.response:hover {
+    background-color: darkgray;
+}
+.see {
+   background-color: turquoise;
+    position: absolute;
+    
+    top: 1840px;
+    font-size: 30px;
+    border: none;
+
+
+}
+.see:hover {
+    color: rgb(182, 26, 73);
+}
+.location {
+    font-size: 50px;
+    background-color: turquoise;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foot {
+    background-color: turquoise;
+}
+.contact {
+    font-size: 30px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact_list {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    top: 3000px;
+    
+}
+.media {
+    font-size: 30px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 800px;
+    top: 2780px;
+}
+.media_list {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    position: absolute;
+    right: 900px;
+    top: 2930px;
+
+
+}
+.clock {
+    font-size: 30px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 400px;
+    top: 2880px;
+}
+input {
+    padding: 10px;
+    margin: 5px;
+}
+.email {
+    position: absolute;
+    right: 56px;
+}
+.submit {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: absolute;
+    right: 60px;
+}
+.submit:hover {
+    background-color: rgb(60, 78, 236);
+}
+.main_about {
+    font-size: 150px;
+    margin: 0px;
+    padding: 200px;
+    padding-left: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./main_back.jpg);
+    
+}
+
+.about_li {
+    text-decoration: none;
+    display: inline;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    margin: 30px;
+    
+
+}
+
+.about_ul {
+    background-color: turquoise;
+}
+.partner {
+    margin: 100px;
+    margin-right: 50px;
+}
+
+.head_history {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 550px;
+
+}
+.history {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(176, 227, 240);
+    margin: 80px;
+    font: bold;
+}
+.our_partners {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 550px;
+}
+.branches {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 550px; 
+}
+
+    
