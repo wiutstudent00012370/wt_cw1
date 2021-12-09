@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    
+    <img class="doctors" src="./first.webp">
+    
+    <section class="links">
+        <nav class="div">
+            <!-- This is navigation -->
+            
+            <ul>
+               
+                <li class="nav"> <a href="index.html"> Home</a></li>
+                <li class="nav"> <a href="aboout.html"> About us</a></li>
+                <li class="nav"> <a href="service.html"> Our services</a></li>
+                <li class="nav"> <a href="reservation.html"> Reservation</a></li>
+                <li class="nav"> <a href="price.html"> Pricing</a></li>
+                <li class="nav"> <a href="question.html"> Questions and recommendations</a></li>
+            </ul>
+           
+        </nav>
+       
+    </section>
+    <section class="home">
+        <h1 class="about">Helping our patients and their families get back to what matters most.</h1>
+        <img class="doctors2" src="./doctors.jpg">
+        </section>
+
+        <section class="covid"> 
+        <h2 class="covid-19">Our Response to COVID-19</h2>
+        <P class="response">The COVID-19 pandemic has created an<br> unprecedented,  once in a century, public <br>health, social and economic emergency.<br>   It is the doctors and nurses of <br> government hospitals that have been at <br> the front line of the pandemic <br> response risking their lives every <br> day to keep  healthy. </P>
+        <button class="see">See More</button>
+        </section>
+    
+    <!-- Map to find -->
+    <img class="virus" src="./covid-19.jpg">
+    <section class="map">
+        <h3 class="location">How to find us</h3>
+        <div umiframe></iframe="<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95937.3960115549!2d69.14241315820315!3d41.286155000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a37121afa3d%3A0x9d71e292f09dcd2d!2sStar%20Med%20Center!5e0!3m2!1sru!2s!4v1638418127881!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95937.3960115549!2d69.14241315820315!3d41.286155000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8dcf6ff82733%3A0x98a108d820afcd99!2sShox%20International%20Hospital!5e0!3m2!1sru!2s!4v1638418348967!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>">
+        </div>
+       
+    </section> 
+    <!-- Links to social media and clock to see the time -->
+    <footer class="foot">
+        <h3 class="contact">Contact us</h3>
+        <ul class="contact_list">
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Phone Number</a></li>
+            <li><a href="#">Adress</a></li>
+        </ul><br>
+        <h3 class="media">Social Mdeia</h3>
+        <ul class="media_list">
+        <li><a href="#"> Telegram</a></li>
+        <li><a href="#"> Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        </ul><br>
+         <div class="clock">
+            <p id="time_p">Time</p>
+            <header id="time">12 : 34 : 56</header>
+            <script>
+                // taking element by id
+            let time = document.getElementById('time');
+            setInterval(setTime, 1000);
+            
+            // function to change the time based on clock
+            function setTime () {
+                let date = new Date();
+                let hours = date.getHours();
+                let mins = date.getMinutes();
+                let sec = date.getSeconds();
+                time.textContent = `${hours} : ${mins} : ${sec}`;
+};
+            </script>
+            </div>
+        <p>This website was created to fulfill Web technology module's requirements and does not represent an actual company or service</p>
+    </footer>
+    
+</body>
+</html>
